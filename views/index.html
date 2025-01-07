@@ -69,6 +69,20 @@
                     <p>Date: <span>25th Jan 2025</span></p>
                     <p>Venue: <span>Seminar Hall B</span></p>
                 </div>
+                <div class="event-block">
+                    <img src="green-tech.jpg" alt="Green Tech Seminar"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Green Tech Seminar</h3>
+                    <p>Date: <span>25th Jan 2025</span></p>
+                    <p>Venue: <span>Seminar Hall B</span></p>
+                </div>
+                <div class="event-block">
+                    <img src="green-tech.jpg" alt="Green Tech Seminar"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Green Tech Seminar</h3>
+                    <p>Date: <span>25th Jan 2025</span></p>
+                    <p>Venue: <span>Seminar Hall B</span></p>
+                </div>
             </div>
             <button class="arrow right-arrow" id="right-arrow">&#10095;</button>
         </div>
@@ -136,39 +150,53 @@
     
     <!-- Setup and start animation! -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        setTimeout
-        var typed = new Typed('#element', {
-            strings: ['Environmental Club','Cleaning Club'],
-            typeSpeed: 50,
-        });
-        document.querySelector('.navbar::after').addEventListener('click', function () {
-            document.querySelector('.navbar').classList.toggle('open');
-        });
-        function toggleSidebar() {
-            var sidebar = document.getElementById("sidebar");
-            if (sidebar.style.width === "0px" || sidebar.style.width === "") {
-                sidebar.style.width = "250px";
-            } else {
-                sidebar.style.width = "0px";
-            }
-        }
+    <script src="index.js">
+        // setTimeout
+        // var typed = new Typed('#element', {
+        //     strings: ['Environmental Club','Cleaning Club'],
+        //     typeSpeed: 50,
+        // });
+        // document.querySelector('.navbar::after').addEventListener('click', function () {
+        //     document.querySelector('.navbar').classList.toggle('open');
+        // });
+        // function toggleSidebar() {
+        //     var sidebar = document.getElementById("sidebar");
+        //     if (sidebar.style.width === "0px" || sidebar.style.width === "") {
+        //         sidebar.style.width = "250px";
+        //     } else {
+        //         sidebar.style.width = "0px";
+        //     }
+        // }
 
 
 
     </script>
-    <script>
-        const leftArrow = document.getElementById('left-arrow');
-        const rightArrow = document.getElementById('right-arrow');
-        const eventsContainer = document.querySelector('.events-container');
+    <script > 
+        document.addEventListener("DOMContentLoaded", function () {
+                const leftArrow = document.getElementById("left-arrow");
+                const rightArrow = document.getElementById("right-arrow");
+                const eventsContainer = document.querySelector(".events-container");
 
-        leftArrow.addEventListener('click', () => {
-            eventsContainer.scrollBy({ left: -300, behavior: 'smooth' });
-        });
+                let scrollAmount = 0; // Keeps track of the current scroll position
+                const scrollStep = 300; // The number of pixels to scroll with each click
 
-        rightArrow.addEventListener('click', () => {
-            eventsContainer.scrollBy({ left: 300, behavior: 'smooth' });
-        });
+                // Handle right arrow click
+                rightArrow.addEventListener("click", function () {
+                    eventsContainer.scrollBy({
+                        left: scrollStep,
+                        behavior: "smooth",
+                    });
+                });
+
+                // Handle left arrow click
+                leftArrow.addEventListener("click", function () {
+                    eventsContainer.scrollBy({
+                        left: -scrollStep,
+                        behavior: "smooth",
+                    });
+                });
+            });
+
     </script>
 </body>
 
