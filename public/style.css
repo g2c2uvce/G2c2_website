@@ -1,22 +1,23 @@
   /* Global Styles */
   body {
-    font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        // background-image: url('8d9683b8-d023-4da0-aa80-bcfc9dd8078b.webp');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      // background-image: url('8d9683b8-d023-4da0-aa80-bcfc9dd8078b.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
   }
 
   /* Navbar Styles */
   .navbar {
-        display: flex;
+      display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 30px;
-      background-color: rgb(23 59 12 / 80%); /* Semi-transparent background */
+      background-color: rgb(23 59 12 / 80%);
+      /* Semi-transparent background */
       backdrop-filter: blur(10px);
       position: sticky;
       top: 0;
@@ -25,8 +26,8 @@
   }
 
   .navbar .logo {
-    width: 50px;
-        height: 50px;
+      width: 50px;
+      height: 50px;
   }
 
   .navbar ul {
@@ -71,32 +72,32 @@
   .hero {
       text-align: center;
       padding: 3rem 1rem;
-       
+
       color: #ffffff;
-    background-image: url('8d9683b8-d023-4da0-aa80-bcfc9dd8078b.webp');
+      background-image: url('8d9683b8-d023-4da0-aa80-bcfc9dd8078b.webp');
       height: 60vh;
-    font-family: "Sixtyfour", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-variation-settings:
-            "BLED" 0,
-            "SCAN" 0;
-      
+      font-family: "Sixtyfour", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+          "BLED" 0,
+          "SCAN" 0;
+
   }
 
   .hero h1 {
-    font-family: 'Poppins', sans-serif;
-        font-size: 3em;
-        font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      font-size: 3em;
+      font-weight: 600;
       font-size: 4rem;
       margin-bottom: 1rem;
   }
 
   .hero p {
-    font-family: 'Roboto', sans-serif;
-        font-size: 1.5em;
-        font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5em;
+      font-weight: 300;
       font-size: 2rem;
       line-height: 1.5;
   }
@@ -122,7 +123,7 @@
 
   /* Event Block Styling */
   .event-block {
-     // background: rgba(255, 255, 255, 0.1);
+      // background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.2);
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(10px);
@@ -175,6 +176,7 @@
   .event-button:hover {
       background: #388e3c;
   }
+
   .events-wrapper {
       position: relative;
       max-width: 100%;
@@ -256,4 +258,44 @@
       right: 10px;
   }
 
- 
+  #news-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+  }
+
+  #news-container .news-block {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  #news-container .news-block img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+  }
+
+  #news-container .news-block h3 {
+      font-size: 1.2em;
+      margin: 10px 0;
+  }
+
+  #news-container .news-block p {
+      font-size: 0.9em;
+      padding: 0 10px;
+      margin: 10px 0;
+  }
+
+  #news-container .news-block a {
+      display: inline-block;
+      margin: 10px 0;
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: bold;
+  }
